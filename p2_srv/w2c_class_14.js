@@ -67,54 +67,54 @@ var class_46 = new w2c_class_46();
             return _loc5_;
         }
                
-//        /*public */function decode3_1_1(param1/*:String*/)/* : String*/
-//        {
-//            var _loc4_/*:Number*/ = NaN;
-//            var _loc5_/*:Number*/ = NaN;
-//            var _loc6_/*:Number*/ = NaN;
-//            var _loc7_/*:Number*/ = NaN;
-//            var _loc8_/*:Number*/ = NaN;
-//            var _loc2_:Array = param1.split("");
-//            _loc4_ = _loc2_.length;
-//            if((_loc5_ = _loc4_ % 7) != 0)
-//            {
-//                _loc4_ = _loc4_ + 7 - _loc5_;
-//            }
-//            /*var _loc9_:Array = new Array(_loc4_);*/
-//            var _loc9_ = new Buffer(_loc4_);
-//            _loc8_ = _loc4_ / 7;
-//            _loc6_ = 0;
-//            while(_loc6_ < 7)
-//            {
-//                _loc7_ = 0;
-//                while(_loc7_ < _loc8_)
-//                {
-//                    if(_loc6_ * _loc8_ + _loc7_ < _loc2_.length)
-//                    {
-//                        _loc9_[_loc6_ + _loc7_ * 7] = _loc2_[_loc6_ * _loc8_ + _loc7_];
-//                    }
-//                    else
-//                    {
-//                        _loc9_[_loc6_ + 7 * _loc7_] = " ";
-//                    }
-//                    _loc7_++;
-//                }
-//                _loc6_++;
-//            }
-//            while(_loc9_[_loc4_ - 1] == " ")
-//            {
-//                _loc4_--;
-//            }
-//            var _loc10_:String = "";
-//            _loc6_ = 0;
-//            while(_loc6_ < _loc4_)
-//            {
-//                _loc10_ = _loc10_ + _loc9_[_loc6_];
-//                _loc6_++;
-//            }
-//            return _loc10_;
-//        }
-//        
+        /*public function */decode3_1_1(param1/*:String*/)/* : String*/
+        {
+            var _loc4_/*:Number*/ = NaN;
+            var _loc5_/*:Number*/ = NaN;
+            var _loc6_/*:Number*/ = NaN;
+            var _loc7_/*:Number*/ = NaN;
+            var _loc8_/*:Number*/ = NaN;
+            var _loc2_/*:Array*/ = param1.split("");
+            _loc4_ = _loc2_.length;
+            if((_loc5_ = _loc4_ % 7) != 0)
+            {
+                _loc4_ = _loc4_ + 7 - _loc5_;
+            }
+            /*var _loc9_:Array = new Array(_loc4_);*/
+            var _loc9_ = [];
+            _loc8_ = _loc4_ / 7;
+            _loc6_ = 0;
+            while(_loc6_ < 7)
+            {
+                _loc7_ = 0;
+                while(_loc7_ < _loc8_)
+                {
+                    if(_loc6_ * _loc8_ + _loc7_ < _loc2_.length)
+                    {
+                        _loc9_[_loc6_ + _loc7_ * 7] = _loc2_[_loc6_ * _loc8_ + _loc7_];
+                    }
+                    else
+                    {
+                        _loc9_[_loc6_ + 7 * _loc7_] = " ";
+                    }
+                    _loc7_++;
+                }
+                _loc6_++;
+            }
+            while(_loc9_[_loc4_ - 1] == " ")
+            {
+                _loc4_--;
+            }
+            var _loc10_/*:String*/ = "";
+            _loc6_ = 0;
+            while(_loc6_ < _loc4_)
+            {
+                _loc10_ = _loc10_ + _loc9_[_loc6_];
+                _loc6_++;
+            }
+            return _loc10_;
+        }
+        
 //        private function a_148(param1/*:String*/)/* : String*/
 //        {
 //            return /*this.*/a_155(param1,/*this.*/decode3_1_75);
