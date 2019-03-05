@@ -29,7 +29,7 @@ var uid_tbl = {
     '47c262a2-22ae-485d-a9af-02b5b10465ea': '837060',
     '48dbc908-acd3-4283-a11c-f71cd21fb669': '126248',
     '4a3a657b-05d7-40ff-98a1-6621c6775ae8': '900579',
-    '4ee6359b-76de-43b6-8540-ffeed2457bd4': '126017',
+    '4ee6359b-76de-43b6-8540-ffeed2457bd4': '126017'/*,
     '52c4b34b-0f04-4a0b-9f5e-58e1a24d9927': null,
     '586a86da-155e-4e44-921e-f045652ba5bc': null,
     '594e62b1-c3e4-40a0-811b-726413b5c105': null,
@@ -100,12 +100,15 @@ var uid_tbl = {
     'f0bc634b-7800-46d8-ad30-1b9178bc1e6b': null,
     'faaff637-f6de-45c8-bb6e-e8c728b1c063': null,
     'fcda8912-03fa-45bc-b606-f31b92f3ed13': null,
-    'ff190bd6-95bc-4665-b429-8baf59e137a4': null
+    'ff190bd6-95bc-4665-b429-8baf59e137a4': null*/
 }
 
 module.exports = {
     get_uid: function () {
         var uid_keys = Object.keys(uid_tbl);
         return uid_keys[Math.floor(Math.random()*uid_keys.length)];
+    },
+    get_imagenumber: function(uid) {
+        return uid_tbl[uid];
     }
 };

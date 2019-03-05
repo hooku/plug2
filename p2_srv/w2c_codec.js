@@ -61,7 +61,7 @@ function pkt_parse(cap_file) {
             //console.log(raw_packet.header);
             //console.log(raw_packet.data);
 
-            raw_packet.data.pcap_header = { link_type: 'LINKTYPE_ETHERNET'};
+            raw_packet.data.pcap_header = { link_type: 'LINKTYPE_ETHERNET' };
             
             var server_block = new netmask(serv_ip_mask);
             var packet = pcap.decode.packet(raw_packet.data);

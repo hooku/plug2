@@ -1,6 +1,9 @@
-var show_confirm = function() {
+var crack = function() {
     var btn_confirm = document.getElementById("testBtnConfirm");
     btn_confirm.style.display = "block";
+    
+    checkBrowser = true;
+    checkFlash = true;
 }
 
 var prev_handler = window.onload;
@@ -9,5 +12,5 @@ window.onload = function () {
         prev_handler();
     }
     
-    setTimeout(show_confirm, 500);
+    setTimeout(crack, 500);
 };
