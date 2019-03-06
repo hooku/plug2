@@ -1,16 +1,3 @@
-var crack = function() {
-    var btn_confirm = document.getElementById("testBtnConfirm");
-    btn_confirm.style.display = "block";
-    
-    checkBrowser = true;
-    checkFlash = true;
-}
-
-var prev_handler = window.onload;
-window.onload = function () {
-    if (prev_handler) {
-        prev_handler();
-    }
-    
-    setTimeout(crack, 500);
-};
+navigator.__defineGetter__('userAgent', function(){
+    return 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; WOW64; Trident/4.0)';
+});
